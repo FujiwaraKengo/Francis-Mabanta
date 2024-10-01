@@ -26,55 +26,68 @@ import firebaseDark from '../../assets/Firebase-Dark.svg'
 import firebaseLight from '../../assets/Facebook-Light.svg'
 import gitHubDark from '../../assets/GitHub-Dark.svg'
 import gitHubLight from '../../assets/GitHub-Light.svg'
+import { useTheme } from '../../common/ThemeContext'
 
 
 function MySkills() {
-    // const reactIcon = theme === 'light' ? reactLight : reactDark
+    const { theme } = useTheme();
+    const htmlIcon = theme === 'light' ? htmlLight : htmlDark;
+    const cssIcon = theme === 'light' ? cssLight : cssDark;
+    const javascriptIcon = theme === 'light' ? javascriptLight : javascriptDark;
+    const pythonIcon = theme === 'light' ? pythonLight : pythonDark;
+    const flutterIcon = theme === 'light' ? flutterLight : flutterDark;
+    const dartIcon = theme === 'light' ? dartLight : dartDark;
+    const firebaseIcon = theme === 'light' ? firebaseLight : firebaseDark;
+    const gitHubIcon = theme === 'light' ? gitHubLight : gitHubDark;
+    const nodeJSIcon = theme === 'light' ? nodeJSLight : nodeJSDark;
+    const expressJSIcon = theme === 'light' ? expressJSLight : expressJSDark;
+    const reactIcon = theme === 'light' ? reactLight : reactDark;
+    const bootstrapIcon = theme === 'light' ? bootstrapLight : bootstrapDark;
     return (
     <section id='skills' className={styles.container}>
         <h1 className='sectionTitle'>Skills</h1>
         <div className={styles.skillContainer}>
             <SkillCards
-            img={htmlDark}
+            img={htmlIcon}
             skill='HTML'/>
             <SkillCards
-            img={cssDark}
+            img={cssIcon}
             skill='CSS'/>
             <SkillCards
-            img={javascriptDark}
+            img={javascriptIcon}
             skill='JAVASCRIPT'/>
             <SkillCards
-            img={pythonDark}
+            img={pythonIcon}
             skill='PYTHON'/>
         </div>
         <hr />
         <div className={styles.skillContainer}>
             <SkillCards
-            img={flutterDark}
+            img={flutterIcon}
             skill='FLUTTER'/>
             <SkillCards
-            img={dartDark}
+            img={dartIcon}
             skill='DART'/>
             <SkillCards
-            img={firebaseDark}
+            img={firebaseIcon}
             skill='FIREBASE'/>
             <SkillCards
-            img={gitHubDark}
+            img={gitHubIcon}
             skill='GITHUB'/>
         </div>
         <hr />
         <div className={styles.skillContainer}>
             <SkillCards
-            img={nodeJSDark}
+            img={nodeJSIcon}
             skill='NodeJS'/>
             <SkillCards
-            img={expressJSDark}
+            img={expressJSIcon}
             skill='ExpressJS'/>
             <SkillCards
-            img={reactDark}
+            img={reactIcon}
             skill='REACT'/>
             <SkillCards
-            img={bootstrapDark}
+            img={bootstrapIcon}
             skill='BOOTSTRAP'/>
         </div>
     </section>
