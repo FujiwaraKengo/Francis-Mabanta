@@ -4,7 +4,6 @@
 
 <div align="center">
   <a href="https://francis-kenneth-portfolio.netlify.app">
-    <img src="https://img.shields.io/netlify-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
   </a>
 </div>
 
