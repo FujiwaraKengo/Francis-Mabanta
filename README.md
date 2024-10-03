@@ -3,8 +3,8 @@
 <br/>
 
 <div align="center">
-  <a href="https://francis-kenneth-portfolio.netlify.app">
-    <h1>My Portfolio</h1>
+  <a href="https://francis-kenneth-portfolio.netlify.app" target="_blank" style="text-decoration: none;">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=My+Portfolio;" />
   </a>
 </div>
 
